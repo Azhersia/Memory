@@ -28,8 +28,6 @@ body {
     align-items: center;
 }
 
-
-
 /*Bg of buttons*/
 .button-container,
 .resetButton-container {
@@ -95,8 +93,10 @@ p {
 #card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 30px;
+    gap: 15px;
+    row-gap: 10px;
 }
 
 /*===================  Cards  =======================*/
@@ -108,7 +108,6 @@ p {
     transform-style: preserve-3d;
     transition: transform 1.2s;
     cursor: pointer;
-    margin: 15px 7px 15px 7px;
 }
 
 /* Styles flipped cards*/
@@ -215,7 +214,7 @@ img {
     .card-basics {
         height: 160px;
         width: 100px;
-        margin: 0 4px 15px 4px;
+
     }
 
     img {
@@ -228,13 +227,13 @@ img {
 @media only screen and (min-width: 1300px) {
     #card-container {
         margin-top: 100px;
-        max-width: 800px;
+        max-width: 900px;
+        gap: 20px;
     }
 
     .card-basics {
         height: 180px;
         width: 120px;
-        margin: 10px 0 10px 0;
     }
 
     img {
