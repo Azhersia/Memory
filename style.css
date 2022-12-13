@@ -7,14 +7,13 @@
     box-sizing: border-box;
     font-family: 'Emblema One', cursive;
     user-select: none;
-    overflow: hidden;
 }
 
 /*body basic*/
 body {
     height: 100vh;
     background: linear-gradient(0deg, #ffffff 0%, #e8e8e8 100%);
-
+    overflow: hidden;
 }
 
 /*======================================================*/
