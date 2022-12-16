@@ -65,7 +65,7 @@ body {
 }
 
 .resetButton:hover {
-    background-color: rgb(203, 203, 203);
+    background-color: #cbcbcb;
     transform: translateY(1px);
 }
 
@@ -92,6 +92,7 @@ p {
 
 /* Positions cards */
 #card-container {
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -182,7 +183,7 @@ img {
 /*===============================================*/
 /*==================DarkMode styling====================*/
 .bodyDarkMode {
-    background: linear-gradient(0deg, #2b2b2b 0%, #646464 100%);
+    background: linear-gradient(0deg, #191919 0%, #5d5d5d 100%);
 }
 
 .pressed {
@@ -191,7 +192,6 @@ img {
     transform: translateY(2.5px);
     outline: 0;
 }
-
 
 .darkModeClass {
     background: linear-gradient(0deg, #4e4e4e 0%, #8e8e8e 100%);
@@ -215,7 +215,6 @@ img {
     .card-basics {
         height: 160px;
         width: 100px;
-
     }
 
     img {
