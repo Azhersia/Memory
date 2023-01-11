@@ -69,6 +69,7 @@ function init() {
     // loop to create the cards
     for (let i = 0; i < cards.length; i++) {
 
+        // declares new div into variable
         const newCard = document.createElement("div")
         console.log(cards[i].id)
 
@@ -120,8 +121,10 @@ let card1, card2
 // flips cards
 function flipCard(el) {
 
-    // checks if card1 and card2 values are the same
+    // checks if card1 and card2 have values
     if (card1 && card2) {
+        console.log('duh')
+        // play sound
         flipSound.play();
 
         // add onclick
@@ -152,10 +155,11 @@ function flipCard(el) {
 
         // checks if card1 has a value
     } else if (card1) {
+        // play sound
         flipSound.play();
         console.log("setting card 2: ", el.id)
 
-        // if it does add element to card2
+        // add element to card2
         card2 = el
         // remove onclick
         card2.onclick = ""
@@ -165,6 +169,7 @@ function flipCard(el) {
 
         // check if id from card1 and card2 are the same
         if (card1.id == card2.id) {
+            // play sound
             flipSound.play();
 
             // add class
@@ -193,6 +198,7 @@ function flipCard(el) {
         }
         // if none of these are correct
     } else {
+        // play sound
         flipSound.play();
         console.log("setting card 1: ", el.id)
 
@@ -207,7 +213,7 @@ function flipCard(el) {
     }
 }
 
-// function to toggle darkmode
+// toggling classes for darkmode
 function toggleDarkMode() {
     bodySelect.classList.toggle("bodyDarkMode")
     button1.classList.toggle("pressed")
@@ -218,7 +224,7 @@ function toggleDarkMode() {
 // listenes after clicks on first button
 button1.addEventListener('click', toggleDarkMode);
 
-// function to reset cards
+// resets cards
 function reset() {
     let answer = confirm("Are you sure you want to reset the game?");
     if (answer == true) {

@@ -17,7 +17,6 @@ body {
 }
 
 /*======================================================*/
-
 /*====================  Top Bar  =======================*/
 .topBar {
     width: 100vw;
@@ -82,6 +81,7 @@ p {
 }
 
 /*======================================================*/
+/*===================  Cards  =======================*/
 
 /*Positions the card-container*/
 .flex-container {
@@ -100,8 +100,6 @@ p {
     gap: 15px;
     row-gap: 10px;
 }
-
-/*===================  Cards  =======================*/
 
 /*Styles the unflipped cards*/
 .card-basics {
@@ -157,7 +155,6 @@ img {
 }
 
 /*===============================================*/
-
 /*=================  Animations  =====================*/
 @keyframes smaller {
     0% {
@@ -183,11 +180,11 @@ img {
 /*===============================================*/
 /*==================DarkMode styling====================*/
 .bodyDarkMode {
-    background: linear-gradient(0deg, #191919 0%, #5d5d5d 100%);
+    background: linear-gradient(0deg, #191919 0%, #484848 100%);
 }
 
 .pressed {
-    background: linear-gradient(0deg, #646464 0%, #2b2b2b 100%);
+    background: linear-gradient(0deg, #484848 0%, #2b2b2b 100%);
     box-shadow: inset 3px 3px 1px #000000;
     transform: translateY(2.5px);
     outline: 0;
