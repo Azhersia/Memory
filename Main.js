@@ -229,7 +229,8 @@ function reset() {
     let answer = confirm("Are you sure you want to reset the game?");
     if (answer == true) {
 
-        scoreDoc.innerText = 0
+        score = 0
+        scoreDoc.innerText = "0"
         cardContainer.replaceChildren()
         init()
     }
